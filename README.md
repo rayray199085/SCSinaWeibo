@@ -1,6 +1,13 @@
 # SCSinaWeibo
-====
+
 A project for learning swift
 ----
-### login
-<img src="https://github.com/rayray199085/SCSinaWeibo/blob/master/images/weibo_login.gif" width="30%" height="30%">
+### 1. Login
+### 2. New Features
+### 3. Welcome Pages
+<center>
+    <img src="https://github.com/rayray199085/SCSinaWeibo/blob/master/images/weibo_login.gif" width="30%" height="30%">
+    <img src="https://github.com/rayray199085/SCSinaWeibo/blob/master/images/weibo_new_feature.gif" width="30%" height="30%">
+    <img src="https://github.com/rayray199085/SCSinaWeibo/blob/master/images/weibo_welcome.gif" width="30%" height="30%">
+</center>
+
