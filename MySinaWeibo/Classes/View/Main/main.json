@@ -1,0 +1,41 @@
+[
+  {
+    "title" : "Home",
+    "visitorInfo" : {
+      "imageName" : "",
+      "message" : "It's free and always will be."
+    },
+    "className" : "SCHomeViewController",
+    "imageName" : "home"
+  },
+  {
+    "title" : "Message",
+    "visitorInfo" : {
+      "imageName" : "visitordiscover_image_message",
+      "message" : "We're the dot. in. com."
+    },
+    "className" : "SCMessageViewController",
+    "imageName" : "message_center"
+  },
+  {
+    "className" : "UIViewController"
+  },
+  {
+    "title" : "Discovery",
+    "visitorInfo" : {
+      "imageName" : "visitordiscover_image_message",
+      "message" : "The Globe brings you the world in a single copy."
+    },
+    "className" : "SCDiscoveryViewController",
+    "imageName" : "discover"
+  },
+  {
+    "title" : "Profile",
+    "visitorInfo" : {
+      "imageName" : "visitordiscover_image_profile",
+      "message" : "Take time to indulge."
+    },
+    "className" : "SCProfileViewController",
+    "imageName" : "profile"
+  }
+]

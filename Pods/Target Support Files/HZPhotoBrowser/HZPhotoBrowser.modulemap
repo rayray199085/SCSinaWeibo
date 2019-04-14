@@ -1,0 +1,6 @@
+framework module HZPhotoBrowser {
+  umbrella header "HZPhotoBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

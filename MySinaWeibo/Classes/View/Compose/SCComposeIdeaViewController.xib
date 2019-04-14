@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCComposeIdeaViewController" customModule="MySinaWeibo" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="s0b-ev-3mw" id="vgE-xQ-uNk"/>
+                <outlet property="titleLabel" destination="VFG-c3-orc" id="rPf-eI-BDl"/>
+                <outlet property="toolbar" destination="aGf-Cs-E7t" id="MBm-Sv-Cc0"/>
+                <outlet property="toolbarBottomConstraint" destination="62d-ko-Xqe" id="Jou-Ac-wft"/>
+                <outlet property="view" destination="eJt-yW-YfM" id="sSS-L8-eZk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eJt-yW-YfM">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-ev-3mw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGf-Cs-E7t">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s0b-ev-3mw" firstAttribute="top" secondItem="eJt-yW-YfM" secondAttribute="top" id="0Vf-Uf-JDH"/>
+                <constraint firstItem="aGf-Cs-E7t" firstAttribute="bottom" secondItem="MWW-Nh-D9U" secondAttribute="bottom" id="62d-ko-Xqe"/>
+                <constraint firstItem="aGf-Cs-E7t" firstAttribute="leading" secondItem="MWW-Nh-D9U" secondAttribute="leading" id="TeB-gl-M03"/>
+                <constraint firstItem="s0b-ev-3mw" firstAttribute="leading" secondItem="MWW-Nh-D9U" secondAttribute="leading" id="idf-8U-sRt"/>
+                <constraint firstItem="aGf-Cs-E7t" firstAttribute="top" secondItem="s0b-ev-3mw" secondAttribute="bottom" id="pvh-9A-wfT"/>
+                <constraint firstItem="s0b-ev-3mw" firstAttribute="trailing" secondItem="MWW-Nh-D9U" secondAttribute="trailing" id="ulK-KA-qii"/>
+                <constraint firstItem="aGf-Cs-E7t" firstAttribute="trailing" secondItem="MWW-Nh-D9U" secondAttribute="trailing" id="vGh-Bl-B7a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="MWW-Nh-D9U"/>
+            <point key="canvasLocation" x="186.40000000000001" y="86.806596701649184"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VFG-c3-orc">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="New Post">
+                    <attributes>
+                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="13" name=".SFNSText"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="5" name=".SFNSText"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="  ">
+                    <attributes>
+                        <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="1" name=".SFNSText"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="5" name=".SFNSText"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="rayray199085">
+                    <attributes>
+                        <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="11" name=".SFNSText"/>
+                        <font key="NSOriginalFont" size="11" name=".SFNSText"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-186.40000000000001" y="641.82908545727139"/>
+        </label>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="C6T-YO-FRJ" customClass="SCEmoticonInputView" customModule="MySinaWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2pp-OV-koW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S3e-Hf-TJO" customClass="SCEmoticonFlowLayout" customModule="MySinaWeibo" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-gq-sUe" customClass="SCEmoticonToolbar" customModule="MySinaWeibo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="220" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3ZB-aK-AuO"/>
+                    </constraints>
+                </view>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="OaW-wO-5Uu">
+                    <rect key="frame" x="184" y="191" width="7" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2pp-OV-koW" firstAttribute="top" secondItem="x3R-3z-pCj" secondAttribute="top" id="2Bc-bR-Ztp"/>
+                <constraint firstItem="ohm-gq-sUe" firstAttribute="bottom" secondItem="x3R-3z-pCj" secondAttribute="bottom" id="Eie-Of-QcA"/>
+                <constraint firstItem="OaW-wO-5Uu" firstAttribute="centerX" secondItem="C6T-YO-FRJ" secondAttribute="centerX" id="kNu-VE-Alh"/>
+                <constraint firstItem="x3R-3z-pCj" firstAttribute="trailing" secondItem="2pp-OV-koW" secondAttribute="trailing" id="kPK-iV-RiS"/>
+                <constraint firstItem="2pp-OV-koW" firstAttribute="leading" secondItem="x3R-3z-pCj" secondAttribute="leading" id="n9e-Yi-ytS"/>
+                <constraint firstItem="ohm-gq-sUe" firstAttribute="top" secondItem="OaW-wO-5Uu" secondAttribute="bottom" constant="-8" id="oPP-Ew-dLl"/>
+                <constraint firstItem="ohm-gq-sUe" firstAttribute="trailing" secondItem="x3R-3z-pCj" secondAttribute="trailing" id="q14-fn-yZs"/>
+                <constraint firstItem="ohm-gq-sUe" firstAttribute="leading" secondItem="x3R-3z-pCj" secondAttribute="leading" id="sca-xm-C7w"/>
+                <constraint firstItem="ohm-gq-sUe" firstAttribute="top" secondItem="2pp-OV-koW" secondAttribute="bottom" id="wdC-RS-hYV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="x3R-3z-pCj"/>
+            <connections>
+                <outlet property="collectionView" destination="2pp-OV-koW" id="cYH-uE-LVZ"/>
+                <outlet property="pageIndicator" destination="OaW-wO-5Uu" id="eeD-bJ-OAT"/>
+                <outlet property="toolbar" destination="ohm-gq-sUe" id="PTP-g5-ERZ"/>
+            </connections>
+            <point key="canvasLocation" x="135.19999999999999" y="146.62668665667167"/>
+        </view>
+    </objects>
+</document>
